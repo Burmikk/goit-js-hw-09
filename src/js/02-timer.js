@@ -51,9 +51,10 @@ function onCountTime() {
 }
 
 btnStartEl.addEventListener("click", () => {
+    changeTimeInterval = setInterval(onCountTime, 1000)
+
     btnStartEl.setAttribute("disabled", "")
     btnStopEl.removeAttribute("disabled")
-    changeTimeInterval = setInterval(onCountTime, 1000)
 })
 
 
