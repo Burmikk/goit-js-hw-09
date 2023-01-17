@@ -66,7 +66,7 @@ function onCountTime() {
 }
 
 btnStartEl.addEventListener("click", () => {
-    if (futureTime <= new Date) {
+    if (futureTime <= new Date()) {
         btnStartEl.classList.remove("activ-green")
         btnStartEl.setAttribute("disabled", "")
         return Notiflix.Notify.failure("Please choose a date in the future");
