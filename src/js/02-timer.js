@@ -75,6 +75,7 @@ btnStartEl.addEventListener("click", () => {
     changeTimeInterval = setInterval(onCountTime, 1000)
 
     inputEl.setAttribute("disabled", "")
+   inputEl.classList.add("input-disabled-js")
     btnStartEl.setAttribute("disabled", "")
     btnStopEl.removeAttribute("disabled")
     btnStartEl.classList.remove("activ-green")
@@ -125,5 +126,7 @@ function addLeadingZero(value) {
 function changeStyleIfClickStop() {
     btnStopEl.setAttribute("disabled", "")
     btnStopEl.classList.remove("activ-red")
-     inputEl.removeAttribute("disabled")
+    inputEl.removeAttribute("disabled")
+    inputEl.classList.remove("input-disabled-js")
+
 }
