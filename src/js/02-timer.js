@@ -48,7 +48,7 @@ const options = {
 flatpickr(inputEl, options)
 
 function onCountTime() {
-    deltaTime = futureTime - new Date()
+    const deltaTime = futureTime - new Date()
     const { days, hours, minutes, seconds } = convertMs(deltaTime)
     
     secondsEl.textContent = addLeadingZero(seconds)
