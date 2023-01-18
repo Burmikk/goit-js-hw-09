@@ -20,8 +20,6 @@ function startCreatePromise(e) {
   createPromise(i+1, delay + step * i)
     .then(data => Notiflix.Notify.success(`Fulfilled promise ${data.position} in ${data.delay} `))
     .catch(data => Notiflix.Notify.failure(`Rejected promise ${data.position} in ${data.delay} `))
-    // delay+=step
-
   }
   
 }
