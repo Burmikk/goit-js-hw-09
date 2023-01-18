@@ -15,7 +15,7 @@ function startCreatePromise(e) {
   const delay = +e.target.elements.delay.value
   const amount = +e.target.elements.amount.value
   const step = +e.target.elements.step.value
-  for (i = 0; i < amount; i++){
+  for (let i = 0; i < amount; i++){
     
   createPromise(i+1, delay + step * i)
     .then(data => Notiflix.Notify.success(`Fulfilled promise ${data.position} in ${data.delay} `))
